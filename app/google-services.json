@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "20289545678",
+    "firebase_url": "https://kokomove-2d7a7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kokomove-2d7a7",
+    "storage_bucket": "kokomove-2d7a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20289545678:android:552cd004488053ec0ff79f",
+        "android_client_info": {
+          "package_name": "com.example.kokomove_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl1fNKFQObe3pkwEwf5Zff_BdT7RJdCRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

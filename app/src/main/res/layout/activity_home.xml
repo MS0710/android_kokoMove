@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/house_list_bg">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_home_userStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會員: 一般會員"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_home_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名: Jack"
+                android:textColor="@color/black"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_home_createNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增訂單"
+            android:background="@drawable/btn_select_orange"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的訂單"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_below="@id/top"
+        android:layout_marginHorizontal="20dp"/>
+
+    <ListView
+        android:id="@+id/lv_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line"
+        android:layout_above="@id/bottom_line"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_above="@id/bottom"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_home_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="聯絡客服"
+            android:background="@drawable/btn_select_orange"
+            android:layout_marginHorizontal="50dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
